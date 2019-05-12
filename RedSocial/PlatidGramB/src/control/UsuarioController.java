@@ -33,7 +33,7 @@ public class UsuarioController extends HttpServlet {
 		UsuarioDao uDao = new UsuarioDao();
 		Usuario u = uDao.findByField("usuario", usuarioParam);
 		
-		System.out.println(uDao);
+		System.out.println(usuarioParam);
 	
 		request.getAttribute("verUsuario"+ u);
 		

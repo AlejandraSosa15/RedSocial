@@ -60,7 +60,7 @@ public class RegistroController extends HttpServlet {
 			request.setAttribute("mensaje", "Bienvenido");
 			Utilidad util = new Utilidad();
 			util.enviarCorreo(u);
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("inicio.jsp").forward(request, response);
 
 	}
 
